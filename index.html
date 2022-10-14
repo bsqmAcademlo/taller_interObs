@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bsquiroz</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="darkMode">
+
+    <div class="icon--open">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <nav id="navbar" class="navbar">
+        <span><a href="#home">BSQUIROZ</a></span>
+
+        <ul class="navbar__menu">
+            <li><a href="#home" class="link link--active">home</a></li>
+            <li><a href="#about" class="link">about</a></li>
+            <li><a href="#portfolio" class="link">portfolio</a></li>
+            <li><a href="#contact" class="link">contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="home hidden">
+            <h1 class="home__title">Hola mi nombre es <span>stiven quiroz</span> y soy <span>desarrollador
+                    frontend</span></h1>
+        </section>
+
+        <section id="about" class="about hidden">
+            <h2>Quien soy yo?</h2>
+
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem laboriosam voluptatem voluptates ullam
+                nam
+                aut. Iste mollitia necessitatibus consequatur reprehenderit delectus aliquid voluptatum molestiae
+                repudiandae ab, officia doloremque quae magni?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni laboriosam nisi molestiae aut
+                earum
+                voluptates exercitationem magnam, eligendi accusamus amet laudantium vitae, expedita perferendis nihil
+                aliquid architecto fuga eos.
+            </p>
+
+            <div class="about__img">
+                <img src="./assets/images/me.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio hidden">
+            <h2>Estos son mis trabajos</h2>
+
+            <div class="portfolios">
+                <div class="portfolios__item">
+                    <img src="./assets/images/img1.jpg" alt="imagen 1">
+                </div>
+
+                <div class="portfolios__item">
+                    <img src="./assets/images/img2.jpg" alt="imagen 2">
+                </div>
+
+                <div class="portfolios__item">
+                    <img src="./assets/images/img3.jpg" alt="imagen 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact hidden">
+            <h2>Escribeme</h2>
+            <form netlify>
+                <input type="text" placeholder="Ingrese su nombre" required>
+                <input type="email" placeholder="Ingrese su email" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Cuentame..." required></textarea>
+                <button class="btn">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+
+
+
+    <footer>
+        <p>Diseñado y programado por mi con mucho ❤️</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+
+</html>
