@@ -7,8 +7,6 @@ const observer = new IntersectionObserver(
             if (entry.isIntersecting) {
                 entry.target.classList.add("show");
 
-                console.log(entry.target);
-
                 links.forEach((link) => {
                     if (link.textContent === entry.target.id) {
                         link.classList.add("link--active");
@@ -40,4 +38,16 @@ links.forEach((link) => {
         iconopen.classList.toggle("icon--close");
         navbarMenu.classList.toggle("navbar__menu--show");
     });
+});
+
+// theme
+
+const theme = document.querySelector(".theme");
+
+theme.addEventListener("click", () => {
+    if (document.body.classList.toggle("darkMode")) {
+        theme.textContent = "🌕";
+    } else {
+        theme.textContent = "🌑";
+    }
 });

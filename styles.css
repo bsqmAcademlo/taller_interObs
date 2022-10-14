@@ -1,14 +1,21 @@
 :root {
-    --color-bg: #181818;
-    --color-font: #fff;
+    --color-bg: #faf7f0;
+    --color-font: #181818;
     --color-principal: #5f9df7;
 
     --z-navbar: 5000;
 }
 
 body.darkMode {
+    --color-bg: #181818;
+    --color-font: #faf7f0;
+}
+
+body {
     background-color: var(--color-bg);
     color: var(--color-font);
+
+    transition: background-color 0.5s, color 0.5s;
 }
 
 * {
@@ -88,6 +95,16 @@ main {
 
 .icon--close div:nth-child(3) {
     transform: rotate(-52deg);
+}
+
+.theme {
+    position: fixed;
+    z-index: 4000;
+    right: 0.5rem;
+    bottom: 3rem;
+    font-size: 2rem;
+
+    cursor: pointer;
 }
 
 .link {
@@ -209,6 +226,7 @@ main {
     padding: 1rem;
     border-radius: 1rem;
     outline: none;
+    border: none;
 
     transition: opacity 0.5s, transform 0.5s;
 }
@@ -227,6 +245,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    text-align: center;
 }
 
 @media (max-width: 600px) {
